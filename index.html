@@ -1,1 +1,143 @@
-this will be added later!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harper's Toolbox</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f5f5f5;
+    }
+    
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      max-width: 1200px;
+      padding: 20px;
+    }
+    
+    .card {
+      width: 300px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 24px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+    
+    .card-icon {
+      width: 48px;
+      height: 48px;
+      background-color: #f0f0f0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+    
+    .card-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #333;
+    }
+    
+    .card-description {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+    
+    .card-link {
+      display: inline-block;
+      text-decoration: none;
+      color: #0070f3;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    
+    .card-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        gap: 16px;
+      }
+      
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" onclick="window.open('https://harperwashington.github.io/money', '_blank')">
+      <div class="card-icon">
+        <!-- Money/wallet icon for Money Tracker -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+          <line x1="2" x2="22" y1="10" y2="10"></line>
+          <path d="M16 14h.01"></path>
+          <path d="M13 14h.01"></path>
+        </svg>
+      </div>
+      <h3 class="card-title">Money Tracker</h3>
+      <p class="card-description">A simple way to keep track of your mini economy. Add and remove from your virtual wallet.</p>
+      <a href="https://harperwashington.github.io/money" class="card-link" target="_blank">Visit →</a>
+    </div>
+    
+    <div class="card" onclick="window.open('https://oculadotnet.github.io/pipractice', '_blank')">
+      <div class="card-icon">
+        <!-- Pi/math icon for Pi Practice -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="8" y1="6" x2="21" y2="6"></line>
+          <line x1="8" y1="12" x2="21" y2="12"></line>
+          <line x1="8" y1="18" x2="21" y2="18"></line>
+          <line x1="3" y1="6" x2="3.01" y2="6"></line>
+          <line x1="3" y1="12" x2="3.01" y2="12"></line>
+          <line x1="3" y1="18" x2="3.01" y2="18"></line>
+        </svg>
+      </div>
+      <h3 class="card-title">Pi Practice</h3>
+      <p class="card-description">Test your memorizing skills with this website. Time and memorize the digits of Pi.</p>
+      <a href="https://oculadotnet.github.io/pipractice" class="card-link" target="_blank">Visit →</a>
+    </div>
+    
+    <div class="card" onclick="window.open('https://harperwashington.github.io', '_blank')">
+      <div class="card-icon">
+        <!-- Coming soon/construction icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="8" y1="12" x2="16" y2="12"></line>
+          <line x1="12" y1="8" x2="12" y2="16"></line>
+        </svg>
+      </div>
+      <h3 class="card-title">...</h3>
+      <p class="card-description">More websites coming soon!</p>
+    </div>
+  </div>
+</body>
+</html>
